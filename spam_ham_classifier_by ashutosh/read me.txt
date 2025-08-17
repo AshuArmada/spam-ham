@@ -1,0 +1,65 @@
+# 📧 Spam-Ham Classifier
+
+A machine learning project that classifies text messages as **Spam** or **Ham** using:
+- **TF-IDF vectorization**
+- **Keyword flags for spammy terms**
+- **Statistical text features**
+- **Logistic Regression classifier**
+
+It also provides:
+- Visualizations of spam vs ham distribution
+- Keyword occurrence plots
+- Word clouds
+- Confusion matrix heatmap
+
+---
+
+## 🚀 Features
+- **Data Preprocessing**: Cleans text (removes URLs, emails, punctuation, stopwords, lowercasing, lemmatization)
+- **Feature Engineering**:
+  - TF-IDF (unigrams + bigrams)
+  - Character count
+  - Word count
+  - Average word length
+  - Number of exclamation marks, digits, uppercase letters
+ 
+- **Model Training**:
+  - Logistic Regression
+  - Auto-discovers top spam keywords
+  - Saves model + TF-IDF vectorizer + keywords
+- **Prediction**:
+  - CLI tool to classify new messages as Spam or Ham
+- **Visualizations**:
+  - Spam vs Ham bar chart
+  - Word count distribution
+  - Keyword frequency bar chart
+  - Spam word cloud
+  - Confusion matrix heatmap
+
+---
+
+
+## Requirements
+
+pandas
+numpy
+nltk
+scikit-learn
+matplotlib
+seaborn
+joblib
+wordcloud
+
+## how to run
+     python main.py
+ # train model only
+     python train.py
+ #predict new messages 
+     python predict.py 
+ #test some specific data
+      python test.py(edit the data in test.py file)
+ 
+
+
+
+
